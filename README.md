@@ -1,6 +1,6 @@
 # Démonstrations des huit cours Spring
 
-Ce dépôt contient les applications de démonstration exécutables du cours d’architecture et framework Spring. La démonstration guidée fait partie de chaque séance ; elle précède le TP, qui demande aux étudiants de modifier le code. Prérequis : Java 25, Maven 3.9 et Spring Boot 3.5.16.
+Ce dépôt contient les applications de démonstration exécutables du cours d’architecture et framework Spring. La démonstration fait partie de chaque séance : elle présente le comportement général et les composants essentiels du projet avant le TP, qui demande aux étudiants de modifier le code. Prérequis : Java 25, Maven 3.9 et Spring Boot 3.5.16.
 
 | Cours | Démo | Support |
 | --- | --- | --- |
