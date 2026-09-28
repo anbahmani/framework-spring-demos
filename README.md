@@ -13,4 +13,4 @@ Ce dépôt contient les applications de démonstration exécutables du cours d�
 | 7 | [Faire un appel HTTP depuis une seconde application Spring](course-07-client-http/README.md) | [Cours associé](https://anbahmani.github.io/framework-spring-course/cours/07-client-http.html) |
 | 8 | [Observer l’envoi et la réception asynchrones](course-08-messages/README.md) | [Cours associé](https://anbahmani.github.io/framework-spring-course/cours/08-messages.html) |
 
-Chaque projet dispose de son propre `pom.xml` et README. Depuis le dossier choisi, lancer `mvn spring-boot:run` ou `mvn test` selon la séance. `mvn test` à la racine vérifie tous les modules.
+Chaque projet dispose de son propre `pom.xml` et README. Depuis le dossier choisi, lancer `mvn spring-boot:run` ou `mvn test` selon la séance. À la racine, `mvn test` vérifie les huit démos de cours. Les deux exemples complémentaires `rest-users` et `jms-orders` ne font pas partie de cette progression ; ils se vérifient séparément avec `mvn -f rest-users/pom.xml test` et `mvn -f jms-orders/pom.xml test`.
