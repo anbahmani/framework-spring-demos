@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Cours 06 — Tests et transactions",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

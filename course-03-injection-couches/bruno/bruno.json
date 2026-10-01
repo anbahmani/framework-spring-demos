@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Cours 03 — Injection et couches",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

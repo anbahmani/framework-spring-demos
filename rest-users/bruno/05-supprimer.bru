@@ -1,0 +1,17 @@
+meta {
+  name: Supprimer l’utilisateur
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/api/users/{{userId}}
+}
+
+headers {
+  X-API-KEY: {{apiKey}}
+}
+
+assert {
+  res.status: 204
+}

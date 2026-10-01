@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Cours 07 — Client HTTP",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

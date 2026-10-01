@@ -1,0 +1,19 @@
+meta {
+  name: Paramètre de requête
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/hello?name=Bruno
+}
+
+assert {
+  res.status: 200
+}
+
+tests {
+  test("réponse de bienvenue", function () {
+    expect(res.getBody()).to.include("Bonjour");
+  });
+}

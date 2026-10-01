@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "Cours 02 — HTTP et JSON",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Démarrer cette démo avec mvn spring-boot:run, puis envoyer les requêtes."
+  },
+  "item": [
+    {
+      "name": "Paramètre de requête",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/hello?name=Postman"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Statut HTTP 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "pm.expect(pm.response.text()).to.include(\"Bonjour\");"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Objet converti en JSON",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/users/25"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Statut HTTP 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "const user = pm.response.json();",
+              "pm.expect(user.id).to.eql(25);",
+              "pm.expect(user.name).to.eql(\"Ana\");"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080",
+      "type": "string"
+    }
+  ]
+}

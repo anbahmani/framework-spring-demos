@@ -1,0 +1,21 @@
+meta {
+  name: Créer un utilisateur pour le client
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/users
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  "name": "Client Bruno"
+}
+
+assert {
+  res.status: 201
+}

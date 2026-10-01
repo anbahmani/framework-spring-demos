@@ -1,0 +1,17 @@
+meta {
+  name: Lire l’utilisateur créé
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/api/users/{{userId}}
+}
+
+headers {
+  X-API-KEY: {{apiKey}}
+}
+
+assert {
+  res.status: 200
+}

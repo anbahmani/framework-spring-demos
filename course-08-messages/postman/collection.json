@@ -1,0 +1,15 @@
+{
+  "info": {
+    "name": "Cours 08 — Messages JMS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Cette application échange des messages JMS et ne démarre aucun serveur HTTP. Postman ne peut donc pas appeler ses fonctionnalités. Lancer mvn spring-boot:run et observer la console."
+  },
+  "item": [],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080",
+      "type": "string"
+    }
+  ]
+}

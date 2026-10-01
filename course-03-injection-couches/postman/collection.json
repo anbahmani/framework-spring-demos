@@ -1,0 +1,39 @@
+{
+  "info": {
+    "name": "Cours 03 — Injection et couches",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Démarrer cette démo avec mvn spring-boot:run, puis envoyer la requête."
+  },
+  "item": [
+    {
+      "name": "Contrôleur et service",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/hello"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Statut HTTP 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "pm.expect(pm.response.text()).to.include(\"Bonjour\");"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080",
+      "type": "string"
+    }
+  ]
+}

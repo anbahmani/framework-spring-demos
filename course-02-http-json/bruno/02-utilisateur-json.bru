@@ -1,0 +1,20 @@
+meta {
+  name: Objet converti en JSON
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/users/25
+}
+
+assert {
+  res.status: 200
+}
+
+tests {
+  test("corps JSON", function () {
+    expect(res.getBody().id).to.equal(25);
+    expect(res.getBody().name).to.equal("Ana");
+  });
+}

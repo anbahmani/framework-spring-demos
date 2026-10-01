@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Démo complémentaire — JMS commandes",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

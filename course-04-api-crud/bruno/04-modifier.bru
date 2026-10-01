@@ -1,0 +1,21 @@
+meta {
+  name: Modifier l’utilisateur
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/users/{{userId}}
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  "name": "Ana mise à jour"
+}
+
+assert {
+  res.status: 200
+}

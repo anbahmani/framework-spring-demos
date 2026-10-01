@@ -1,0 +1,31 @@
+meta {
+  name: Créer un utilisateur
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/api/users
+}
+
+headers {
+  Content-Type: application/json
+  X-API-KEY: {{apiKey}}
+}
+
+body:json {
+  "name": "Ana",
+  "email": "ana@example.com"
+}
+
+assert {
+  res.status: 201
+}
+
+tests {
+  test("conserver l’identifiant créé", function () {
+    const user = res.getBody();
+    bru.setEnvVar("userId", user.id);
+    expect(user.id).to.be.a("number");
+  });
+}

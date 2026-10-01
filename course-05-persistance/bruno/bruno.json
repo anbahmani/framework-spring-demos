@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Cours 05 — Persistance JPA",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

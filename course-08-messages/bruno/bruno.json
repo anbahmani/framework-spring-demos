@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Cours 08 — Messages JMS",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
