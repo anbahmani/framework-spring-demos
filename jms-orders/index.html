@@ -47,7 +47,7 @@ mvn spring-boot:run</code></pre>
 <li>La session de réception est transactionnelle. La politique de retries/DLQ du broker externe relève d’un approfondissement ultérieur.</li>
 <li>Aucun effet métier persistant, dédoublonnage, outbox ou transaction distribuée n’est implémenté. L’application journalise les réceptions ; elle ne promet pas une exécution métier exactement une fois.</li>
 </ul>
-<p>Les valeurs <code>admin/admin</code> du profil externe sont réservées au laboratoire. Producteur et consommateur utilisent la même queue configurée. Spring gère les connexions et sessions utilisées par les composants applicatifs.</p></section></main>
+<p>Les valeurs <code>admin/admin</code> du profil externe sont réservées au laboratoire. Producteur et consommateur utilisent la même queue configurée. Spring gère les connexions et sessions utilisées par les composants applicatifs.</p><p><strong>Collection Bruno :</strong> <a href="bruno/">ouvrir la collection et ses consignes</a>.</p><p><strong>Collection Postman :</strong> <a href="postman/">télécharger et consulter les requêtes</a>.</p></section></main>
 <script>
 const slides = Array.from(document.querySelectorAll('main section'));
 let currentSlide = 0;

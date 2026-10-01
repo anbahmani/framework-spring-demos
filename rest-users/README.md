@@ -39,3 +39,9 @@ Résultats attendus : 400 puis 401. La clé est configurable par variable `DEMO_
 | UsersApiTest | Vérifier CRUD, validation et refus sans clé |
 
 La démo utilise une base H2 pour observer les opérations de persistance. Le service dépend ici de Spring Data et le DTO de sortie mappe une entité : c’est une petite architecture en couches, pas une implémentation complète d’architecture hexagonale. Les transactions concurrentes, la pagination, la journalisation structurée, le client HTTP, OpenAPI et Spring Security relèvent d’un approfondissement ultérieur, pas des fonctionnalités annoncées comme déjà livrées.
+
+## Collection Bruno
+
+Ouvrir le dossier [`bruno/`](bruno/) dans Bruno et sélectionner l’environnement `local`. Les détails et limites de la collection figurent dans [`bruno/README.md`](bruno/README.md).
+
+Importer aussi [la collection Postman](postman/collection.json) ; voir les [consignes Postman](postman/).

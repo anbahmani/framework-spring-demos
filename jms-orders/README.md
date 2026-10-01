@@ -39,3 +39,9 @@ Pour un broker conteneurisé, fixer la version de l’image et monter effectivem
 - Aucun effet métier persistant, dédoublonnage, outbox ou transaction distribuée n’est implémenté. L’application journalise les réceptions ; elle ne promet pas une exécution métier exactement une fois.
 
 Les valeurs `admin/admin` du profil externe sont réservées au laboratoire. Producteur et consommateur utilisent la même queue configurée. Spring gère les connexions et sessions utilisées par les composants applicatifs.
+
+## Collection Bruno
+
+Ouvrir le dossier [`bruno/`](bruno/) dans Bruno et sélectionner l’environnement `local`. Les détails et limites de la collection figurent dans [`bruno/README.md`](bruno/README.md).
+
+Importer aussi [la collection Postman](postman/collection.json) ; voir les [consignes Postman](postman/).

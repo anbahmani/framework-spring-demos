@@ -19,3 +19,9 @@ mvn test
 Le projet est autonome : son `pom.xml` déclare ses dépendances et `src/main/java` contient l’application. La configuration se trouve dans `src/main/resources/application.properties` ; les tests éventuels sont dans `src/test/java`.
 
 La démo reprend un état fonctionnel de l’atelier associé. Consulte le support de cours pour le diagramme UML et les explications, puis l’atelier pour les étapes de modification.
+
+## Collection Bruno
+
+Ouvrir le dossier [`bruno/`](bruno/) dans Bruno et sélectionner l’environnement `local`. Les détails et limites de la collection figurent dans [`bruno/README.md`](bruno/README.md).
+
+Importer aussi [la collection Postman](postman/collection.json) ; voir les [consignes Postman](postman/).

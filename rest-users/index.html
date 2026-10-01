@@ -50,7 +50,7 @@ curl -i http://localhost:8080/api/users</code></pre>
 <tr><td>ApiKeyFilter</td><td>Contrôler l’accès par clé de démonstration</td></tr>
 <tr><td>UsersApiTest</td><td>Vérifier CRUD, validation et refus sans clé</td></tr>
 </table></div>
-<p>La démo utilise une base H2 pour observer les opérations de persistance. Le service dépend ici de Spring Data et le DTO de sortie mappe une entité : c’est une petite architecture en couches, pas une implémentation complète d’architecture hexagonale. Les transactions concurrentes, la pagination, la journalisation structurée, le client HTTP, OpenAPI et Spring Security relèvent d’un approfondissement ultérieur, pas des fonctionnalités annoncées comme déjà livrées.</p></section></main>
+<p>La démo utilise une base H2 pour observer les opérations de persistance. Le service dépend ici de Spring Data et le DTO de sortie mappe une entité : c’est une petite architecture en couches, pas une implémentation complète d’architecture hexagonale. Les transactions concurrentes, la pagination, la journalisation structurée, le client HTTP, OpenAPI et Spring Security relèvent d’un approfondissement ultérieur, pas des fonctionnalités annoncées comme déjà livrées.</p><p><strong>Collection Bruno :</strong> <a href="bruno/">ouvrir la collection et ses consignes</a>.</p><p><strong>Collection Postman :</strong> <a href="postman/">télécharger et consulter les requêtes</a>.</p></section></main>
 <script>
 const slides = Array.from(document.querySelectorAll('main section'));
 let currentSlide = 0;
